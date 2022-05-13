@@ -1,0 +1,4 @@
+The LS_COLORS has a very particular structure, formatted by the dircolors program.
+It does seems to accept different structures of ANSI colors sequences, but I'm not sure everything is working properly (maybe I am using wrong ANSI sequences, or they are not supported).
+In any case, because I only have max 8 content colors, I do not have to wory about complex ANSI sequences, and I can then simple send format;color sequences as stated in the dircolors -p command.
+The default colors are the ones which will be previously chosen for the VT configuration, and not for the ls (shell dependant) command.
