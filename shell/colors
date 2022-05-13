@@ -1,0 +1,13 @@
+#This the file defining unified color theme for any interactive shell environment, so I have a nice, clear and unified view of my shell from anywhere.
+#It is supposed to run in a color-free environment (all color-related possible variables should be removed prior to running this script, but some important ones are nevertheless removed for security here.
+#The color-scheme is defined for 8-color compatible terminals (like the linux tty defaults ones), 256-color compatible terminals (almost every actual terminal emulators issued from or after xterm), and for RGB-color compatible terminals (if any???).
+
+#Force important colors variables reset
+
+
+#Detect the type of terminal
+case "$TERM" in
+	linux) supported=0;;	
+	256) supported=1;;
+	all) supported=2;;
+esac
