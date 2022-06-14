@@ -1,0 +1,69 @@
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"General settings
+
+"Turn off Vi compatibility
+"Must be at top of file
+set nocompatible
+
+"Show line numbers
+set number relativenumber
+set numberwidth=3
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Tab settings 
+"Only use tabs for indentation
+"Size of 4 for indentation
+
+"Number of spaces a \t character is worth
+set tabstop=4
+
+"Number of spaces inserted (removed) when hitting tab (backspace) key
+set softtabstop=4
+
+"Do not expand tab characters to spaces
+set noexpandtab
+
+"Numeber of spaces inserted when indenting text at start of line
+set shiftwidth=4
+
+"Carry indentation level to next line.
+"If nothing is typed, indent is deleted.
+set autoindent
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Wrapping options
+
+"Set textwidth at 0 to avoid any line breaks
+set textwidth=0
+
+"Wraps text at the end of screen
+set wrap
+
+"Break lines only at characters specified in the breakat variable
+set linebreak
+
+"No wrapmargin
+set wrapmargin=0
+
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Search parameters
+
+"Activate  incremental search
+set incsearch
+
+"Do not wrap to start of file when reaching end
+set nowrapscan
+
+"Case-sensitive search
+set noignorecase
+
+"Highlight search matches
+set hlsearch
+noh "clear current highlight if previous search existed in the document when sourcing the vimrc file
+
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+"Insert Home-made mappings
+let $CONFIGPATH="~/.vim"
+source $CONFIGPATH/keymap.vim 

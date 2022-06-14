@@ -35,11 +35,8 @@ I will thus build Truecolor themes.
 I will not create my own themes (I don't have the expertise or time), I will simply implement open-source existing ones.
 For every theme I implement, I will create one version for Truecolor support, and one version for 8-color support (for the tty) (no 8-bit color support or any other existing in-between format). I will thus simply have to detect if the VT is a tty to select corresponding theme version.
 
-One theme will be composed of the following items (inspiration from the Solarized theme) : 
-1) a background tone
-2) some content tones (4 ? I will see)
-3) accent tones (8 ? I will see).
-...
-The idea is to have less that 16 tones inside one theme (more tones would be useless I think).
+Every theme will be composed of maximum 16 tones which form what is called a color palette (see wikipedia : palette (computing)), from which everything displayed will be taken.
+The total number of used colors for text (foreground, comment and accent tones) must not exceed 8 (otherwise there may be some problem with sent ASCII codes).
+E.g. : 1 tone for background, 1 tone for current line, 1 tone for selection, 1 tone for foreground (text), 1 tone for comment (i.e. 4 content tones), and the rest for accent tones. 
 
 To interact with the VT to change the colors, I will need to use what are called ANSI escape sequences/codes (embedded in input text commands to talk to the terminal directly, I have starred a gitHub talking about it).

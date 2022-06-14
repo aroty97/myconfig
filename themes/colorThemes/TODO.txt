@@ -1,0 +1,15 @@
+1) choice of the color theme configuration structure.
+
+2) implementation of the dark solarized theme.
+
+3) implementation of the light solarized theme.
+
+4) manage to implement chosen theme with the gnome-temrinal VT I am currently using.
+
+4) understand how to integrate chosen palette with existing bash tools, like ls --colors, which draws information from the LS_COLORS variable.
+
+5) make sure the integration is consistent with the shell
+
+
+Continue to look at the ls config workout, using dircolors -p | less to observe possible output, man dircolors, man dir_colors, and the~/.bashrc file for the color ls output.
+
