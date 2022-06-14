@@ -27,4 +27,4 @@ augroup ccodes
 	autocmd!
 	autocmd FileType c :inoremap <LocalLeader>( ()<Space>{<Return><Tab><++><Return><Bs>}<Return><Return><++><Esc>?)<Return>i
 augroup END
-inoremap <Space><Space> <Esc>/<++><Return>4xa
+inoremap <Space><Space> <Esc>/<++><Return>:noh<Return>4xa
